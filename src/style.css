@@ -1,3 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: rgba(48, 19, 49, 0.555);
+}
 h1 {
-  color: red;
+  color: rgb(203, 200, 206);
+  margin-top: 40px;
+  font-size: 3em;
+  font-weight: bold;
+}
+form {
+  margin-top: 40px;
+  width: 50%;
+}
+
+.container {
+  background: white;
+  width: 50%;
+  min-width: 400px;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+  opacity: 80%;
+}
+
+.container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.info-container {
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(8, 7, 7, 0.726);
+  color: white;
+  padding: 10px 10px 10px 20px;
+}
+.data-container {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-type {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.weather-data > p {
+  padding-top: 15px;
+}
+
+.weather-type > i {
+  font-size: 6em;
+  color: rgb(103, 57, 146);
+}
+
+form {
+}
+
+input[type="text"] {
+  margin: 0;
+  padding-left: 20px;
+  width: 80%;
+  height: 2em;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+button {
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  float: right;
+  outline: none;
+  border: none;
+  height: 2em;
+  border-radius: 0 5px 5px 0;
+  background: rgb(126, 7, 96);
+  color: white;
+}
+button:hover {
+  color: rgb(126, 7, 96);
+  background: rgba(191, 136, 243, 0.726);
+  cursor: pointer;
 }
